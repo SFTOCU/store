@@ -8,23 +8,6 @@ var app1 = new Vue({
                 author : "author1",
                 price : 1400,
                 isbn : "0001",
-                lectures:[
-                    {
-                        title : "lecture1-1",
-                        youbi : "月",
-                        jigen : "1"
-                    },
-                    {
-                        title : "lecture1-2",
-                        youbi : "火",
-                        jigen : "1"
-                    },
-                    {
-                        title : "lecture1-3",
-                        youbi : "水",
-                        jigen : "1"
-                    },
-                ],
                 isDetail : false
                 
             },
