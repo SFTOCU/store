@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <meta　http-equiv="content-type" charset="UTF-8">
-        <title>TipsNote : GitHub Pages Sample</title>
+    <meta　http-equiv="content-type" charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SFT市大支部 教科書予約サイト</title>
 </head>
     
 <body>
-    <h1>GitHub Pages ああ</h1>
+    <h1>SFT市大支部 教科書予約サイト</h1>
     <div id="app-1">
-    <ol>
-        <li v-for = "book in books">
-          {{book.title}}
-        <li>
-    </ol>
+    <ul>
+        <li class="book" v-for = "(book,index) in books" v-bind:class = "book.class">
+            <ul class = "bookSummary">
+                <li>{{index}}</li>
+                <li class="bookTitle">書籍名 / {{book.title}}</li>
+                <li class="bookAuthor">著者名 / {{book.author}}</li>
+                <li class="bookPublisher">出版社 / {{book.publisher}}</li>
+                <li class="bookPrice">SFT価格 / {{book.price}}</li>
+                <li><button>カートに入れる</button></li>
+                <li><button v-on:click="book.isDetail=(book.isDetail===false)">詳細▼</button></li>
+            </ul>
+            <ul class = "detail" v-if="book.isDetail">
+                <li>ISBN / {{book.isbn}}</li>
+                <li>
+                    <div>使用講義</div>
+                    <ul v-for = "(lecture,index) in book.lectuers">
+                        <li>{{lecture.title}}</li>
+                        <li>{{lecture.youbi}}</li>
+                        <li>{{lecture.jigen}}</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
