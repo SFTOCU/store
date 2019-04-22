@@ -3,12 +3,13 @@
 <head>
     <meta　http-equiv="content-type" charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
     <title>SFT市大支部 教科書予約サイト</title>
 </head>
     
 <body>
-    <h1>SFT市大支部 教科書予約サイト</h1>
-    <div id="app-1">
+    <h1>SFT市大支部<br>教科書予約サイト</h1>
+    <div id="stocklist">
     <ul>
         <li class="book" v-for = "(book,index) in books" v-bind:class = "book.class">
             <ul class = "bookSummary">
@@ -17,19 +18,40 @@
                 <li class="bookAuthor">著者名 / {{book.author}}</li>
                 <li class="bookPublisher">出版社 / {{book.publisher}}</li>
                 <li class="bookPrice">SFT価格 / {{book.price}}</li>
-                <li><button>カートに入れる</button></li>
+                <li><button v-on:click="addToCart(book)">カートに入れる</button></li>
                 <li><button v-on:click="book.isDetail=(book.isDetail===false)">詳細▼</button></li>
             </ul>
             <ul class = "detail" v-if="book.isDetail">
                 <li>ISBN / {{book.isbn}}</li>
                 <li>
                     <div>使用講義</div>
+                    <ul>
+                        <li v-for = "(lecture,index) in book.lectures"><span>{{lecture.youbi}}{{lecture.jigen}}</span><span>{{lecture.name}}</span></li>
+                    </ul>
                 </li>
             </ul>
         </li>
     </ul>
     </div>
-    
+    <div id="controler">
+        <div class = "content">
+            <div class = "filter" v-if="whichshown == 1">
+                <h2>検索</h2>
+            </div>
+            <div class = "cart" v-if="whichshown == 2">
+                <h2>カート</h2>
+                <ol>
+                    <li v-for="book in cart">
+                        <span style="display:inline-block;width:70%;">{{book.title}}</span><span>{{book.price}}</span><button v-on:click="deleteFromCart(book)">削除</button>
+                    </li>
+                </ol>
+                <p v-if="totalprice>0">合計金額 ¥{{totalprice}}</p>
+            </div>
+        </div>
+        <div class = "button">
+            <span v-on:click="whichshown=(whichshown==1?0:1)">検索</span><span v-on:click="whichshown=(whichshown==2?0:2)">カート</span><span class="icon" v-if="cart.length>0">{{cart.length}}</span>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
     <script src="script.js" type="text/javascript"></script>
 </body>

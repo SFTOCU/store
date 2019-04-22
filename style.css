@@ -1,0 +1,37 @@
+.book{
+    margin: 5px 2px 5px 2px;
+    background-color: bisque;
+}
+
+#controler{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    background-color: aquamarine;
+}
+#controler .button{
+    text-align: center;
+}
+#controler .button span{
+    display:inline-block;
+    width: 48%;
+    margin: 3px 1px 3px 1px;
+    border: ridge black;
+    border-radius: 10px;
+    font-size: 1.7em;
+}
+#controler .button .icon{
+    position: fixed;
+    bottom: 1.2em;
+    right: 1%;
+    height: 1.4em;
+    width: 1.4em;
+    
+    font-size: 1.5em;
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    vertical-align: ;
+}
+
