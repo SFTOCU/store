@@ -9,8 +9,8 @@
     
 <body>
     <h1>SFT市大支部<br>教科書予約サイト</h1>
-    <div id="stocklist" v-on:click = "controler.whichshown=0">
-    <ul>
+    <div id="stocklist">
+    <ul  v-on:click = "hideControler()">
         <li class="book" v-for = "(book,index) in books" v-bind:class = "book.class">
             <ul class = "bookSummary">
                 <li>{{index}}</li>

@@ -53,6 +53,9 @@ var stockList = new Vue({
                 controler.totalprice += book.price;
             }
              
+        },
+        hideControler : function(){
+            controler.whichshown = 0;
         }
     }
 });
