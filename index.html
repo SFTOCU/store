@@ -9,7 +9,7 @@
     
 <body>
     <h1>SFT市大支部<br>教科書予約サイト</h1>
-    <div id="stocklist">
+    <div id="stocklist" v-on:click = "controler.whichshown=0">
     <ul>
         <li class="book" v-for = "(book,index) in books" v-bind:class = "book.class">
             <ul class = "bookSummary">
