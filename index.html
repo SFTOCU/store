@@ -58,7 +58,7 @@
             </div>
         </div>
         <div class = "button">
-            <span v-on:click="whichshown=(whichshown==1?0:1)">検索</span><span v-on:click="whichshown=(whichshown==2?0:2)">カート</span><span class="icon" v-if="cart.length>0">{{cart.length}}</span>
+            <span v-on:click="whichshown=(whichshown==1?0:1)">検索</span><span v-on:click="whichshown=(whichshown==2?0:2)">カート</span><span class="num" v-if="cart.length>0">{{cart.length}}</span>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>

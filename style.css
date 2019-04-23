@@ -23,7 +23,6 @@
 }
 #controler .button{
     text-align: center;
-    font-size: 0;
 }
 #controler .button span{
     display:inline-block;
@@ -33,10 +32,10 @@
     border-radius: 10px;
     font-size: 35px;
 }
-#controler .button .icon{
+#controler .button .num{
     position: fixed;
-    bottom: 1.2em;
-    right: 1%;
+    bottom: 1.6em;
+    right: 3%;
     height: 1.4em;
     width: 1.4em;
     
@@ -44,6 +43,6 @@
     background-color: red;
     border: none;
     border-radius: 50%;
-    vertical-align: ;
+    vertical-align:middle;
 }
 
