@@ -76,6 +76,16 @@ var controler = new Vue({
             this.totalprice -= book.price;
             var index = this.cart.indexOf(book);
             this.cart.splice(index,1);
+        },
+        reserve : function(){
+            var buf = [];
+            for(var i = 0; i<this.cart.length; i++){
+                buf.push({title : this.cart[i].title,
+                            isbn : this.cart[i].isbn,
+                            price : this.cart[i].price
+                         });
+            }
+            alert(JSON.stringify(buf));
         }
     }
 })
