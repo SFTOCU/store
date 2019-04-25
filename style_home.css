@@ -9,14 +9,14 @@
     width: 100%;
     height:100%;
     background-color: rgba(100,100,100,0.5);
-    
+    font-size: 22px
 }
 .intro div{
     position: relative;
-    top: 10%;
-    height: 70%;
+    top: 14%;
+    height: 60%;
     margin: 1.5em;
-    padding: 1em;
+    padding: 25% .5em ;
     border: solid .3em white;
     text-align: center;
     color: white;
@@ -27,6 +27,11 @@
   font-size: 150%;
   font-weight: 100;
   font-stretch: condensed;
+}
+.intro div p {
+    text-align: left;
+    margin: 0 0.5em;
+    text-decoration: underline gray;
 }
 #BackGround{
     position:absolute;
