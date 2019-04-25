@@ -22,7 +22,7 @@
     color: white;
 }
 .intro div h1 {
-    display: block;
+    margin-bottom: .5em;
     line-height: 1;
     font-size: 150%;
     font-weight: 100;
@@ -30,7 +30,6 @@
 }
 .intro div p {
     font-size:80%;
-    margin-top: 0.5em;
     text-decoration: underline gray;
 }
 #BackGround{
