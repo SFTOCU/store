@@ -38,6 +38,11 @@
     width: 100%;
     background-color: #202020;
 }
+button{
+    visibility: hidden;
+    background-color: transparent;
+    border: none;
+}
 .header{
     position:absolute;
     top:0;
@@ -45,25 +50,18 @@
     height:4em;
     width:100%;
     padding: 1em;
-}
-.header button{
-    background-color: transparent;
-    border: none;
     color: white;
     font-size: 120%;
 }
+
 .header img{
     height: 100%;
     margin-left: 5px;
 }
 .hbg{
     position: absolute;
-    top: .25em;
-    right: 1em;
-}
-.hbg button{
-    background-color: transparent;
-    border: none;
+    top: 0;
+    right: .25em;
     color: white;
     font-size: 300%;
 }
