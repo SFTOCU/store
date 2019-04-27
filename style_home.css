@@ -37,13 +37,15 @@
     height: 200%;
     width: 100%;
     background-color: #202020;
+    overflow: hidden;
+    z-index: 1;
 }
 button{
     visibility: hidden;
     background-color: transparent;
     border: none;
 }
-.header{
+#header{
     position:absolute;
     top:0;
     left: 0;
@@ -52,24 +54,57 @@ button{
     padding: 1em;
     color: white;
     font-size: 1.2em;
+    z-index: 10;
 }
-.header label{
+#header label{
     position: relative;
     top:-.7em;
 }
-.header img{
+#header img{
     height: 100%;
     margin-left: 5px;
 }
-.hbg{
+#hbg{
     position: absolute;
     top: 0;
     right: .25em;
     padding: 0em;
     font-size: 3.2em;
     color: white;
+    z-index: 11;
 }
-
+#menu{
+    position: absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(50,50,50,0.7);
+    z-index: 20;
+    transition-duration: .5s;
+}
+.hide{
+    left:100%;
+}
+.show{
+    left:0;
+}
+#menu .innerMenu{
+    position: relative;
+    top:0;
+    width:50%;
+    height: 100%;
+    background-color: aqua;
+    transition-duration: .5s;
+}
+.show .innerMenu{
+    left:50%;
+}
+.hide .innerMenu{
+    left:0;
+}
+#menu ul{
+    list-style: none;
+}
 #CrossFade {
   background: #fff;
   display: flex;
