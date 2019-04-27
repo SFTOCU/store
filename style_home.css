@@ -93,11 +93,12 @@ button{
     top:0;
     width:50%;
     height: 100%;
-    padding:0 10px;
-    background-color: aqua;
+    padding:10px;
+    background-color: rgb(1,159,232);
+    color:white;
     transition-duration: .5s;
     text-align: right;
-    font-size:3em;
+    font-size:2.5em;
 }
 .show .innerMenu{
     left:50%;
@@ -107,8 +108,12 @@ button{
 }
 #menu ul{
     list-style: none;
+    margin: 1em 0;
     text-align: left;
     font-size: .5em;
+}
+#menu li{
+    margin: .5em 0;
 }
 #CrossFade {
   background: #fff;
