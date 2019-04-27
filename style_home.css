@@ -41,18 +41,28 @@
 .header{
     position:absolute;
     top:0;
-    left:0;
+    left: 0;
     height:4em;
+    width:100%;
     padding: 1em;
 }
-.header img{
+.header button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 120%;
+}
+.header button img{
     height: 100%;
     margin-left: 5px;
 }
-.header span{
-    font-size: 120%;
-    color: white;
-    vertical-align:super;
+.hbg{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+.hbg button{
+    font-size: 200%;
 }
 
 #CrossFade {
