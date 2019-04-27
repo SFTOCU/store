@@ -93,8 +93,11 @@ button{
     top:0;
     width:50%;
     height: 100%;
+    padding:0 10px;
     background-color: aqua;
     transition-duration: .5s;
+    text-align: right;
+    font-size:3em;
 }
 .show .innerMenu{
     left:50%;
@@ -104,6 +107,8 @@ button{
 }
 #menu ul{
     list-style: none;
+    text-align: left;
+    font-size: .5em;
 }
 #CrossFade {
   background: #fff;
