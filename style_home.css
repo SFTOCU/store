@@ -52,8 +52,8 @@
     color: white;
     font-size: 120%;
 }
-.header button img{
-    height: 1.6em;
+.header img{
+    height: 100%;
     margin-left: 5px;
 }
 .hbg{
