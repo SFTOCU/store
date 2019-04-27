@@ -11,7 +11,7 @@
     background-color: rgba(100,100,100,0.5);
     font-size: 22px
 }
-.intro div{
+.intro .copy{
     position: relative;
     top: 14%;
     height: 60%;
@@ -21,14 +21,14 @@
     text-align: center;
     color: white;
 }
-.intro div h1 {
+.intro .copy h1 {
     margin-bottom: .5em;
     line-height: 1;
     font-size: 150%;
     font-weight: 100;
     font-stretch: condensed;
 }
-.intro div p {
+.intro .copy p {
     font-size:80%;
     text-decoration: underline gray;
 }
@@ -36,6 +36,23 @@
     position:absolute;
     height: 200%;
     width: 100%;
+    background-color: #202020;
+}
+.header{
+    position:absolute;
+    top:0;
+    left:0;
+    height:4em;
+    padding: 1em;
+}
+.header img{
+    height: 100%;
+    margin-left: 5px;
+}
+.header span{
+    font-size: 120%;
+    color: white;
+    vertical-align:super;
 }
 
 #CrossFade {
@@ -46,7 +63,7 @@
   overflow: hidden;
   position: relative;
 }
-#CrossFade img {
+#CrossFade .cf {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -56,13 +73,13 @@
   transform: scale(1.4);
   animation: CrossFade 24s infinite;
 }
-#CrossFade img:nth-child(3) {
+#CrossFade .cf:nth-child(3) {
   animation-delay: 6s;
 }
-#CrossFade img:nth-child(2) {
+#CrossFade .cf:nth-child(2) {
   animation-delay: 12s;
 }
-#CrossFade img:nth-child(1) {
+#CrossFade .cf:nth-child(1) {
   animation-delay: 18s;
 }
 
