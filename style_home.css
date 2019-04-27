@@ -51,9 +51,12 @@ button{
     width:100%;
     padding: 1em;
     color: white;
-    font-size: 120%;
+    font-size: 1.2em;
 }
-
+.header label{
+    position: relative;
+    top:-.4em;
+}
 .header img{
     height: 100%;
     margin-left: 5px;
@@ -62,8 +65,9 @@ button{
     position: absolute;
     top: 0;
     right: .25em;
+    padding: 0em;
+    font-size: 3.2em;
     color: white;
-    font-size: 300%;
 }
 
 #CrossFade {
