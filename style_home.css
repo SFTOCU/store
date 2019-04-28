@@ -80,7 +80,7 @@ button{
     height:100%;
     background-color: rgba(50,50,50,0.7);
     z-index: 20;
-    transition-duration: .5s;
+    transition-duration: .3s;
 }
 .hide{
     left:100%;
@@ -96,7 +96,7 @@ button{
     padding:10px;
     background-color: rgb(1,159,232);
     color:white;
-    transition-duration: .5s;
+    transition-duration: .3s;
     text-align: right;
     font-size:2.5em;
 }
@@ -114,6 +114,9 @@ button{
 }
 #menu li{
     margin: .5em 0;
+}
+#menu a{
+    color: white;
 }
 #CrossFade {
   background: #fff;
