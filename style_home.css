@@ -117,6 +117,7 @@ button{
 }
 #menu a{
     color: white;
+    text-decoration-line: none;
 }
 #CrossFade {
   background: #fff;
