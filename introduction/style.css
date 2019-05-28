@@ -24,14 +24,16 @@ header ul{
     padding: 0;
     font-family:serif;
 }
-
+header a{
+    text-decoration-line: none;
+    color:white;
+}
 article>ul{
     list-style: none;
     padding:5px;
     font-family: serif;
     display: flex;
     flex-wrap:wrap;
-    ;
     background-color: rgba(50,50,50,0.5);
 }
 article>ul>li{
