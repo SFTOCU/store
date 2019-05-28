@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    color:white;
+}
+
+header{
+    position:sticky;
+    top:0;
+    background-color: rgba(0,0,0,0.8);
+    padding: .3em;
+    border-bottom-style:dashed;
+    border-bottom-width: thin;
+}
+header h1{
+    margin:0;
+    font-size: 190%;
+    font-family:serif;
+}
+header ul{
+    list-style-type:none;
+    display: flex;
+    justify-content:space-around;
+    margin: 0 10px;
+    padding: 0;
+    font-family:serif;
+}
+
+article>ul{
+    list-style: none;
+    padding:5px;
+}
+article>ul>li:first-child{
+    font-size:1.7em;
+    font-family: serif;
+}
