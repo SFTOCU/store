@@ -39,13 +39,12 @@ article>ul>li{
 }
 article>ul>li:first-child{
     font-size:1.5em;
-    flex-grow: 1;
     flex-shrink:5;
     padding: .5em 0;
     
 }
 article>ul>li:nth-child(2){
-    flex-grow: 4;
+    flex-shrink: 4;
 }
 article>ul>li:nth-child(3){
     flex-grow: 4;
