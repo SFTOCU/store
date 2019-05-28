@@ -31,6 +31,7 @@ article>ul{
     font-family: serif;
     display: flex;
     flex-wrap:wrap;
+    ;
     background-color: rgba(50,50,50,0.5);
 }
 article>ul>li{
@@ -39,9 +40,35 @@ article>ul>li{
 article>ul>li:first-child{
     font-size:1.5em;
     flex-grow: 1;
+    flex-shrink:5;
     padding: .5em 0;
     
 }
 article>ul>li:nth-child(2){
     flex-grow: 4;
+}
+article>ul>li:nth-child(3){
+    flex-grow: 4;
+}
+article>ul>li:nth-child(4){
+    flex-grow: 4;
+}
+article>ul>li:nth-child(5){
+    flex-grow: 4;
+}
+article>ul>li:nth-child(6){
+    flex-grow: 4;
+}
+article>ul>li:nth-child(7){
+    flex-grow: 4;
+}
+article>ul>li>div:first-child{
+    color:beige;
+    font-size: 1.5em
+}
+article>ul>li>div:last-child{
+    margin-bottom: 2em;
+}
+article>ul>li>div:first-child::before{
+    content: "⁑";
 }
