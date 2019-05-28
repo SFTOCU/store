@@ -30,7 +30,7 @@ article>ul{
     padding:5px;
     font-family: serif;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     background-color: rgba(50,50,50,0.5);
 }
 article>ul>li{
@@ -43,5 +43,5 @@ article>ul>li:first-child{
     
 }
 article>ul>li:nth-child(2){
-    flex-grow: 1;
+    flex-grow: 4;
 }
