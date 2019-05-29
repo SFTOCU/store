@@ -5,7 +5,7 @@ body{
 
 header{
     position:sticky;
-    top:0;
+    top:-3em;
     background-color: rgba(0,0,0,0.8);
     padding: .3em;
     border-bottom-style:dashed;
