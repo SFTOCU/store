@@ -48,12 +48,12 @@ article>ul>li{
 
 article>ul>li:first-child{
     font-size:1.5em;
-    flex-shrink:5;
+    flex-shrink:0;
     padding: .5em 0;
     
 }
 article>ul>li:nth-child(2){
-    flex-shrink: 4;
+    flex-shrink: 0;
 }
 article>ul>li:nth-child(3){
     flex-grow: 4;
